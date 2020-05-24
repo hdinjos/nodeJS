@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>render with ejs template engine</h1>
+    <h2> nomor
+      <%= blog_post %>
+    </h2>
+    <h2>
+      <%= blog.title %>
+    </h2>
+    <h2>
+      <%= blog.category %>
+    </h2>
+    <ul>
+      <%  blog.author.forEach(function(item){ %>
+      <li><%= item %></li>
+     <%  }); %>
+    </ul>
+  </body>
+</html>
